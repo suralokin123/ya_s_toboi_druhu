@@ -1013,13 +1013,12 @@ footer {
     }
 
     .burgers-menu {
-      display: block; /* Убедись, что бургер виден */
-      position: absolute; /* Дает нам возможность позиционировать */
-      top: 20px;      /* Пример: отступ от верха */
-      right:5px;    /* Пример: отступ от правого края */
-      width: 30px;   /* Задай ширину, чтобы было проще работать */
+      position:absolute;
+      top: 20px;
+      right:5px;
+      width: 30px;
       height: 30px;
-      z-index:10001;
+      z-index:2000;
       cursor: pointer;
   }
   
@@ -1040,7 +1039,7 @@ footer {
       width: 100%;
       height:100%;
       background-color: rgba(0, 0, 0, 0.8);
-      z-index: 999;
+      z-index:1;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -1060,11 +1059,11 @@ footer {
   
   .mobile-menu a {
       color: white;
+      font-family: "BryndanWriteBook";
       font-size: 2em;
-      margin: 10px;
+      position: relative;
+      left:-20px;
       text-decoration: none;
   }
   
-  
-
 }
