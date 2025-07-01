@@ -207,7 +207,7 @@
 
  
 
-@media (max-width:375px) {
+@media (min-width:200px) and (max-width:1200px) {
 
 .header-block2 {
   display: none;

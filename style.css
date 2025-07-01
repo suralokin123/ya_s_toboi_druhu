@@ -262,6 +262,10 @@ img {
   margin-bottom: 50px;
 }
 
+.map-container {
+  margin-bottom:50px;
+}
+
 .search-container {
   display: flex;
   justify-content: center;
@@ -614,7 +618,7 @@ img {
   z-index: 1000;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-  width: 80%;
+  width:50%;
   max-width: 600px;
 }
 
@@ -689,6 +693,30 @@ textarea.error {
   top: 10px;
   cursor: pointer;
 }
+
+.close-buttons {
+  position: absolute;
+  top:-35px;
+  left:170px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #002aff;
+  font-size:40px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: background-color 0.2s ease;
+  z-index: 10;
+}
+
+.close-buttons:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 
 .error {
   border: 1px solid red !important;
@@ -798,7 +826,13 @@ footer {
 }
 
 
-@media (max-width:376px) {
+
+@media (min-width:200px) and (max-width:1200px) {
+  
+  .header-block {
+    display: none;
+  }
+  
   .container {
     width: 100%;
     padding: 0 15px;
@@ -898,274 +932,9 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:350px;
-    max-height:auto;
-  }
-  
-  .add-objects {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .add-objects label,
-  .add-objects input,
-  .add-objects textarea,
-  .add-objects button {
-    margin-bottom: 10px;
-  }
-  
-  .add-objects input,
-  .add-objects textarea {
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  .btn-submit {
-    align-self: center;
-    width: auto;
-    padding: 10px 20px;
-  }
-  
-  .form-header {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  
-  .close-button {
-    font-size: 1.5em;
-    cursor: pointer;
-  }
-  
-  .error-message {
-    font-size: 0.8em;
-    color: red;
-  }
-  .btn-footers {
-    display: flex;
-    flex-direction: column;
-  }
-
-    .slides-wrapper {
-      padding: 20px;
-    }
-
-    .search-places {
-      width:350px;
-      margin-bottom:50px;
-    }
-  
-  .text {
     width:300px;
-    font-size:25px;
-  }
-  
-    .slider-container {
-      display: flex;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
-    }
-  
-    .slider-img {
-      flex: 0 0 100%;
-      width: 100%;
-      height: auto;
-      scroll-snap-align: start;
-    }
-  
-  .burger-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 25px;
-    cursor: pointer;
-  }
-  
-  .burger-line {
-    width: 100%;
-    height: 3px;
-    background-color: #000;
-    transition: all 0.3s ease;
-    position:relative;
-    top:19px;
-    left:-15px;
-  }
-  
-  
-  .burger-menu.active .burger-line:nth-child(1) {
-    transform: rotate(40deg) translate(6px, 6px);
-  }
-  
-  .burger-menu.active .burger-line:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .burger-menu.active .burger-line:nth-child(3) {
-    transform: rotate(-40deg) translate(6px, -6px);
-  }
-  
-  
-  .mobile-menu {
-    position: absolute; 
-    top:-50px;
-    left: 0;
-    width:450px;
-    z-index:999;
-    height:700px;
-    background-color:#0362d4;
-    color: white;
-    padding: 20px;
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .mobile_menu_text {
-    font-family: "Gilroy";
-  font-weight: 700;
-  position: relative;
-  top:-10px;
-  font-size: 24px;
-  line-height: 141%;
-  letter-spacing: 0%;
-  color: rgba(255, 255, 255, 1);
-  }
-  
-  
-  .mobile-menu.active {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;  
-    position: absolute;
-    left:-40px;
-  }
-  
-  body.no-scroll {
-    overflow: hidden;
-    height: 100vh;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-  }
-  
-    .burger-menu {
-      z-index:1000;
-      position:relative;
-      top:-10px;
-      left:150px;
-    }
-
-}
-
-
-@media (max-width:200px) {
-
-  .container {
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
-
-  .logo-width {
-    display: none;
-  } 
-
-
-  .header_header-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:40px;
-  }
-
-  .header__header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-
-  .header-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size:35px;
-  }
-
-  .header-title {
-    text-align: center;
-    width:330px;
-    font-size:35px;
-  }
-
-  .header-span {
-    justify-content: center;
-  }
-
-  
-  .img_detski_sad {
-    text-align: center;
-    max-width: 100%;
-    text-align: center;
-    height:auto;
-  }
-
-  .header-subtitle2 {
-    font-family: 'BryndanWriteBook';
-    color: #000;
-    text-align: center;
-    width:300px;
-  }
-
-  .header-block {
-    text-align: center;
-    display: none;
-  }
-
-  .header-subtitle {
-    font-family: 'BryndanWriteBook';
-    color: #000;
-    text-align: center;
-    width:300px;
-  }
-
-  .place-druzhba {
-    font-size:20px;
-  }
-
-  .contents-adaptive {
-    display: flex;
-  }
-
-  .maps {
-    text-align: center;
-    padding:0 20px;
-    margin-bottom:50px;
-  }
-
-  .map-container iframe {
-    width: 100%;
-    height: 300px;
-  }
-
-  .btns-place12 {
-    margin-bottom:20px;
-  }
-  
-  .add-object {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width:350px;
+    position: relative;
+    left:150px;
     max-height:auto;
   }
   
@@ -1241,26 +1010,7 @@ footer {
       height: auto;
       scroll-snap-align: start;
     }
-  
-  .burger-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 25px;
-    cursor: pointer;
-  }
-  
-  .burger-line {
-    width: 100%;
-    height: 3px;
-    background-color: #000;
-    transition: all 0.3s ease;
-    position:relative;
-    top:19px;
-    left:-15px;
-  }
-  
+
   
   .burger-menu.active .burger-line:nth-child(1) {
     transform: rotate(40deg) translate(6px, 6px);
@@ -1277,7 +1027,7 @@ footer {
   
   .mobile-menu {
     position: absolute; 
-    top:-120px;
+    top:-70px;
     left: 0;
     width:450px;
     z-index:999;
@@ -1291,7 +1041,7 @@ footer {
   }
   
   .mobile_menu_text {
-    font-family: "Gilroy";
+    font-family:"BryndanWriteBook";
   font-weight: 700;
   position: relative;
   top:-10px;
@@ -1320,268 +1070,19 @@ footer {
     top: 0;
     left: 0;
   }
-  
-    .burger-menu {
-      z-index:1000;
-      position:relative;
-      top:-10px;
-      left:150px;
-    }
-
-}
-
-
-/* @media (min-width: 375px) and (max-width: 1200px) {
-  
-  .container {
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
-  }
-
-  .logo-width {
-    display: none;
-  } 
-
-
-  .header_header-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:40px;
-  }
-
-  .header__header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-
-  .header-text {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    font-size:35px;
-  }
-
-  .header-title {
-    text-align: center;
-    width:330px;
-    font-size:35px;
-  }
-
-  
-  .img_detski_sad {
-    text-align: center;
-    max-width: 100%;
-    text-align: center;
-    height:auto;
-  }
-
-  .header-subtitle2 {
-    text-align: center;
-    width:300px;
-  }
-
-  .header-block {
-    text-align: center;
-    display: none;
-  }
-
-  .header-subtitle {
-    width:300px;
-  }
-
-  .place-druzhba {
-    font-size:20px;
-  }
-
-  .contents-adaptive {
-    display: flex;
-  }
-
-  .maps {
-    text-align: center;
-    padding:0 20px;
-    margin-bottom:50px;
-  }
-
-  .map-container iframe {
-    width: 100%;
-    height: 300px;
-  }
-
-
-.search-places {
-  width:350px;
-  margin-bottom:50px;
-}
-
-.add-object {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-margin: 0 auto;
-}
-
-.add-objects {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.add-objects label,
-.add-objects input,
-.add-objects textarea,
-.add-objects button {
-  margin-bottom: 10px;
-}
-
-.add-objects input,
-.add-objects textarea {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.btn-submit {
-  align-self: center;
-  width: auto;
-  padding: 10px 20px;
-}
-
-.form-header {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.close-button {
-  font-size: 1.5em;
-  cursor: pointer;
-}
-
-.error-message {
-  font-size: 0.8em;
-  color: red;
-}
-.btn-footers {
-  display: flex;
-  flex-direction: column;
-}
-
-  .slides-wrapper {
-    padding: 20px;
-  }
-
-.text {
-  width:300px;
-  font-size:25px;
-}
-
-  .slider-container {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .slider-img {
-    flex: 0 0 100%;
-    width: 100%;
-    height: auto;
-    scroll-snap-align: start;
-  }
-
-.burger-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 30px;
-  height: 25px;
-  cursor: pointer;
-}
-
-.burger-line {
-  width: 100%;
-  height: 3px;
-  background-color: #000;
-  transition: all 0.3s ease;
-  position:relative;
-  top:19px;
-  left:-15px;
-}
-
-
-.burger-menu.active .burger-line:nth-child(1) {
-  transform: rotate(40deg) translate(6px, 6px);
-}
-
-.burger-menu.active .burger-line:nth-child(2) {
-  opacity: 0;
-}
-
-.burger-menu.active .burger-line:nth-child(3) {
-  transform: rotate(-40deg) translate(6px, -6px);
-}
-
-
-.mobile-menu {
-  position: absolute; 
-  top:-120px;
-  left: 0;
-  width:450px;
-  z-index:999;
-  height:700px;
-  background-color:#0362d4;
-  color: white;
-  padding: 20px;
-  display: none;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.mobile_menu_text {
-  font-family: "Gilroy";
-font-weight: 700;
-position: relative;
-top:-10px;
-font-size: 24px;
-line-height: 141%;
-letter-spacing: 0%;
-text-align: center;
-color: rgba(255, 255, 255, 1);
-}
-
-
-.mobile-menu.active {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;  
-  position: absolute;
-  left:-40px;
-}
-
-body.no-scroll {
-  overflow: hidden;
-  height: 100vh;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-}
-
 
   .burger-menu {
-    z-index:1000;
-    position:relative;
-    top:10px;
-    left:170px;
+    position: relative;
+    left:100px;
   }
-} */
-
+  
+  .burger-line {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transition: all 0.3s ease;
+    position:relative;
+    top:19px;
+    left:-15px;
+  }
+}
