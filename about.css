@@ -214,16 +214,6 @@
 }
 
 
-
-.burger-menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 30px;
-  height: 25px;
-  cursor: pointer;
-}
-
 .header-text2 {
   position:relative;
   top:-120px;
@@ -241,6 +231,14 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
 
 .burger-line {
   width: 100%;
@@ -316,6 +314,7 @@ body.no-scroll {
     top:20px;
     left:320px;
   }
+  
   .main__wrapper {
     display: flex;
     flex-direction: column;
