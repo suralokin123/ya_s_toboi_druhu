@@ -74,9 +74,6 @@ form.addEventListener('submit', function(event) {
     if (!isValid) {
         return;
     }
-
-    //  Если нужно отправлять форму, раскомментируйте это
-    // form.submit();
 });
 
 overlay.removeEventListener('click', function(event) {
