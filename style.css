@@ -1,0 +1,1039 @@
+@font-face {
+  font-family: "BryndanWriteBook";
+  src: url(./fonts/BryndanWriteBook.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "BryndanWriteBook";
+}
+
+body {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  background: #ffffff;
+  font-family: "Mon Amour One", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header_wrapper {
+  display: flex;
+  gap:10px;
+  margin-bottom: 100px;
+}
+
+.header_header-content {
+  display: flex;
+  padding:0 40px;
+  justify-content: space-between;
+}
+
+.header-subtitle {
+  font-size: 40px;
+}
+
+.header-subtitle2 {
+  font-size: 30px;
+}
+
+.header-span {
+  background-color: #0362d4;
+  color: #ffffff;
+  width: 100px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header-span:hover {
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+  border-radius: 15px;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  background-color: #0362d4;
+  color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.btn:hover {
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
+}
+
+.header-title {
+  font-size: 50px;
+  color: #0362d4;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: black;
+}
+
+.header__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img_detski_sad {
+  width:1700px;
+}
+
+.logo-width {
+  position: relative;
+  top: -50px;
+  width: 400px;
+}
+
+.header-block {
+  display: flex;
+  gap: 20px;
+  font-size: 30px;
+}
+
+
+.map {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+
+.map {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  justify-content: space-between;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 50px;
+}
+
+.search-pisk {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.search-img {
+  width: 400px;
+}
+
+.search-pisk2 {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.search-place2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-podrobno2 {
+  color: #ffffff;
+  width: 150px;
+  border-radius: 10px;
+  height: 50px;
+  background: #0362d4;
+  border: none;
+}
+
+.details1 {
+  display: flex;
+  gap: 20px;
+}
+
+#event-details {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  display: none;
+}
+
+.text-details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#search-input {
+  flex-grow: 1;
+  padding-right: 10px;
+}
+
+#search-button {
+  height: 38px;
+  font-size: 20px;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+#search-button:hover {
+  background-color: #3e8e41;
+}
+
+#event-details {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.maps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%;
+  padding-right: 10px;
+}
+
+#search-input1 {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.maps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+  gap: 15px;
+}
+
+#search-input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.search-places {
+  width: 800px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+.search-place6 h4 {
+  font-size:20px;
+}
+
+.place-druzhba {
+  font-size:20px;
+}
+
+.place {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.place2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.place3 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.place4 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.place5 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.place6 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.place7 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.place8 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.place9 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.place10 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.place11 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.place12 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.search-poisk {
+  display: none;
+}
+
+.img-search {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.park-muzei-zarizino {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.search-darvin-muzeim {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.muzei-isskustva-garag {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.muzei-moskovskogo-kremlya {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.moskovski_planetari {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.zaradie {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.gorodskaya_ferma_vdnx {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.experementarium-muzei {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.dom-culturi-ges-dva {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.muzei-kosmonavtiki {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.search-place {
+  display: flex;
+  flex-direction: column;
+}
+
+.btns-place {
+  display: flex;
+}
+
+.btn-podrobno {
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  font-size: 30px;
+  color: #ffffff;
+  background: #0362d4;
+  margin-bottom: 50px;
+}
+
+.btn-podrobno2 {
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  font-size: 30px;
+  color: #ffffff;
+  background: #0362d4;
+  margin-bottom: 50px;
+}
+
+.btn-podrobno3 {
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  font-size: 30px;
+  color: #ffffff;
+  background: #0362d4;
+  margin-bottom: 50px;
+}
+
+.btn-podrobno4 {
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  font-size: 30px;
+  color: #ffffff;
+  background: #0362d4;
+  margin-bottom: 50px;
+}
+
+.btn-podrobno5 {
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  font-size: 30px;
+  color: #ffffff;
+  background: #0362d4;
+  margin-bottom: 50px;
+}
+
+.btn-podrobno6 {
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  font-size: 30px;
+  color: #ffffff;
+  background: #0362d4;
+  margin-bottom: 50px;
+}
+
+.btn-podrobno7 {
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  font-size: 30px;
+  color: #ffffff;
+  background: #0362d4;
+  margin-bottom: 50px;
+}
+
+.btn-podrobno8 {
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  font-size: 30px;
+  color: #ffffff;
+  background: #0362d4;
+  margin-bottom: 50px;
+}
+
+.btn-podrobno9 {
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  font-size: 30px;
+  color: #ffffff;
+  background: #0362d4;
+  margin-bottom: 50px;
+}
+
+.btn-podrobno10 {
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  font-size: 30px;
+  color: #ffffff;
+  background: #0362d4;
+  margin-bottom: 50px;
+}
+
+.btn-podrobno11 {
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  font-size: 30px;
+  color: #ffffff;
+  background: #0362d4;
+  margin-bottom: 50px;
+}
+
+.btn-podrobno12 {
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  font-size: 30px;
+  color: #ffffff;
+  background: #0362d4;
+  margin-bottom: 50px;
+}
+
+.btn-object {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.btn-object2 {
+  padding: 10px 20px;
+  background-color: #0362d4;
+  color: white;
+  width: 150px;
+  height: 100px;
+  font-size: 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.add-object {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  width: 80%;
+  max-width: 600px;
+}
+
+.add-objects label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.add-objects input[type="email"],
+.add-objects textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.object {
+  margin-bottom: 20px;
+  color: red;
+}
+
+.error-message {
+  color: red;
+  position: relative;
+  top: -15px;
+  display: none;
+}
+
+input.error,
+textarea.error {
+  border: 1px solid red;
+}
+
+.blurred {
+  filter: blur(5px);
+  pointer-events: none;
+  user-select: none;
+}
+
+.btn-submit {
+  width: 100px;
+  height: 70px;
+  border-radius: 20px;
+  color: #ffffff;
+  border: none;
+  background-color: #0362d4;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+
+.form-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.close-button {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.error {
+  border: 1px solid red !important;
+}
+
+.error-message {
+  color: red;
+  display: none;
+  margin-top: 5px;
+}
+
+.slider-wrappers {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-container {
+  display: flex;
+  width: 340px;
+  height: 380px;
+}
+
+.slider-img {
+  border-radius: 60px;
+}
+
+.text {
+  width: 400px;
+  color: #ffffff;
+  font-weight: 100;
+}
+
+footer {
+  background-color: #0362d4;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.mail-contacts {
+  color: #ffffff;
+}
+
+.contact-organization {
+  color: #ffff;
+}
+
+.telephone-contacts {
+  color: #ffffff;
+}
+
+.block-content-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 50px;
+  padding: 40px 0;
+}
+
+.footer-contacts {
+  display: flex;
+  text-align: center;
+  gap: 20px;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.btn-footers {
+  display: flex;
+  gap: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-footer1 {
+  color: #0362d4;
+  background-color: #ffffff;
+  width: 200px;
+  height: 50px;
+  font-size: 25px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-footer2 {
+  width: 200px;
+  border-radius: 10px;
+  height: 50px;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.conctactss {
+  width: 300px;
+}
+
+
+.mobile-menu {
+  display:none;
+}
+
+
+@media (min-width: 375px) and (max-width: 1200px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  .logo-width {
+    display: none;
+  } 
+
+
+  .header_header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+  }
+
+  .header__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .header-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size:35px;
+  }
+
+  .header-title {
+    text-align: center;
+    width:330px;
+    font-size:35px;
+  }
+
+  
+  .img_detski_sad {
+    text-align: center;
+    width:350px;
+    text-align: center;
+    height:auto;
+  }
+
+  .header-subtitle2 {
+    text-align: center;
+    width:300px;
+  }
+
+  .header-block {
+    text-align: center;
+    display: none;
+  }
+
+  .header-subtitle {
+    width:300px;
+  }
+
+  .place-druzhba {
+    font-size:20px;
+  }
+
+  .contents-adaptive {
+    display: flex;
+  }
+
+  .maps {
+    text-align: center;
+    padding:0 20px;
+    margin-bottom:50px;
+  }
+
+  .map-container iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+
+.search-places {
+  width:350px;
+  margin-bottom:50px;
+}
+
+.add-object {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width:300px;
+  left:150px;
+}
+
+.add-objects {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.add-objects label,
+.add-objects input,
+.add-objects textarea,
+.add-objects button {
+  margin-bottom: 10px;
+}
+
+.add-objects input,
+.add-objects textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.btn-submit {
+  align-self: center;
+  width: auto;
+  padding: 10px 20px;
+}
+
+.form-header {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.close-button {
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.error-message {
+  font-size: 0.8em;
+  color: red;
+}
+.btn-footers {
+  display: flex;
+  flex-direction: column;
+}
+
+  .slides-wrapper {
+    padding: 20px;
+  }
+
+.text {
+  width:300px;
+  font-size:25px;
+}
+
+  .slider-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .slider-img {
+    flex: 0 0 100%;
+    width: 100%;
+    height: auto;
+    scroll-snap-align: start;
+  }
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.burger-line {
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  transition: all 0.3s ease;
+  position:relative;
+  top:19px;
+  left:-15px;
+}
+
+
+.burger-menu.active .burger-line:nth-child(1) {
+  transform: rotate(40deg) translate(6px, 6px);
+}
+
+.burger-menu.active .burger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.active .burger-line:nth-child(3) {
+  transform: rotate(-40deg) translate(6px, -6px);
+}
+
+
+.mobile-menu {
+  position: absolute; 
+  top:-120px;
+  left: 0;
+  width:450px;
+  z-index:999;
+  height:700px;
+  background-color:#0362d4;
+  color: white;
+  padding: 20px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mobile_menu_text {
+  font-family: "Gilroy";
+font-weight: 700;
+position: relative;
+top:-10px;
+font-size: 24px;
+line-height: 141%;
+letter-spacing: 0%;
+text-align: center;
+color: rgba(255, 255, 255, 1);
+}
+
+
+.mobile-menu.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;  
+  position: absolute;
+  left:-40px;
+}
+
+body.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+
+  .burger-menu {
+    z-index:1000;
+    position:relative;
+    top:10px;
+    left:170px;
+  }
+}
+

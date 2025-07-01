@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <title>Я с тобой дружу</title>
+    <meta name="description" content="Карта дружелюбных мест для людей с РАС. Найдите удобные музеи, мастерские, парки и другие объекты.">
+</head>
+<body>
+    <header class="header">
+        <div class="header__header container">
+            <div class="header-main">
+                <a href="/Ya_druhu_copy/index.html" aria-label="На главную">
+                    <img class="logo-width" src="./img/logo.svg" alt="Логотип Я с тобой дружу">
+                </a>
+            </div>
+            <div class="burger-menu">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+                 <div class="mobile-menu">
+                    <a class="header-text" href="./about.html">О проекте</a>
+                    <a class="header-text" href="/Ya_druhu_copy/blog.html">Блог</a>
+                    <a class="header-text" href="/Ya_druhu_copy/index.html"><span class="header-span">Найти</span></a>
+                </div>
+    
+            <nav class="header-block">
+                <a class="header-text" href="./about.html">О проекте</a>
+                <a class="header-text" href="./blog.html">Блог</a>
+                <a class="header-text" href="#search"><span class="header-span">Найти</span></a>
+            </nav>
+    
+       
+        </div>
+    </header>
+    
+    <main>
+        <section class="header_wrapper">
+            <div class="header_header-content container">
+                <div class="header-text">
+                    <h1 class="header-title">Я с тобой дружу</h1>
+                    <p class="header-subtitle">Карта дружелюбных мест для людей с РАС</p>
+                    <p class="header-subtitle2">Мы поможем вам найти удобные музеи, мастерские, парки и другие обьекты</p>
+                    <div class="btn-header">
+                        <button class="btn"><span class="btn-header1">Найти места</span></button>
+                    </div>
+                </div>
+                <div class="img_detski_sad">
+                  <img class="header_main_place" src="./img/header_main_place.png" alt="Иллюстрация дружелюбного места">
+                </div>
+            </div>
+        </section>
+
+        <section id="map" class="maps container">
+            <h2>Интерактивная карта</h2>
+            <p class="place-druzhba">Найдите ближайшие дружелюбные места на карте:</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/d/u/1/embed?mid=1J-B7GKIEeeMmCgy6STONcncmPeI5Sik&ehbc=2E312F" width="640" height="480" title="Карта дружелюбных мест"></iframe>
+            </div>
+        </section>
+
+        <section id="search" class="search-places container">
+            <h2>Поиск мероприятий</h2>
+            <label for="search-input">Введите название мероприятия или адрес:</label>
+            <div class="search-container">
+                <input class="search-search" type="text" id="search-input" placeholder="Например, Музей Царицыно">
+                <button id="search-button">Найти</button>
+            </div>
+            
+            <h3>Результаты поиска</h3>
+            <div class="search-poisk" id="search-results">
+                <article class="search-pisk">
+                    <img class="park-muzei-zarizino" src="./img/muzei_harizino.jpg" alt="Фотография Парка-музея Царицыно">
+                    <div class="search-place">
+                        <h4>Парк-музей Царицыно</h4>
+                        <div class="place">
+                            <h5>Адаптация:</h5>
+                            <p>✔️ Проведение адаптированных экскурсий.</p>
+                            <p>✔️ Есть специальные дни для особых посетителей.</p>
+                            <p>✔️ Организуются мастер-классы, пикники и концерты.</p>
+                            <p><strong>Адрес:</strong> Ивановская ул., 25</p>
+                            <p><strong>Контакты:</strong> +7 495 322-44-33, <a href="http://tsaritsyno-museum.ru">tsaritsyno-museum.ru</a></p>
+                            <p>Москва, ул. Дольская, д. 1</p>
+                        </div>
+                        <div class="btns-place">
+                            <button class="btn-podrobno">Подробнее</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="search-pisk2">
+                    <img class="search-darvin-muzeim" src="./img/darvinovski_muzei.jpg" alt="Фотография Дарвиновского музея">
+                    <div class="search-place2">
+                        <h4>Дарвиновский музей</h4>
+                        <div class="place2">
+                            <p><strong>Контакты:</strong> <a href="http://darwinmuseum.ru">darwinmuseum.ru</a>, +7 (499) 132-10-47</p>
+                            <p><strong>Адрес:</strong> Москва, ул. Вавилова, 57</p>
+                            <h5>Адаптация:</h5>
+                            <p>✔️ Наличие специализированных программ</p>
+                            <p>✔️ Мастер-классы</p>
+                            <p>✔️Наличие информационных материалов, адаптированных для детей</p>
+                            <p>✔️ Интерактивные экскурсии</p>
+                        </div>
+                        <div class="btns-place2">
+                            <button class="btn-podrobno2">Подробнее</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="search-pisk3">
+                    <img class="img-search" src="./img/tretakovskaya_galereya.jpg" alt="Фотография Третьяковской галереи">
+                    <div class="search-place3">
+                        <h4>Третьяковская галерея</h4>
+                        <div class="place3">
+                            <h5>Адаптация:</h5>
+                            <p>✔️ Наличие специализированных программ</p>
+                            <p>✔️ Мастер-классы</p>
+                            <p>✔️ Наличие информационных материалов, адаптированных для детей</p>
+                            <p>✔️ Интерактивные экскурсии</p>
+                            <p><strong>Адрес:</strong> Москва, ул. Вавилова, 57</p>
+                            <p><strong>Контакты:</strong> +7 (499) 132-10-47, <a href="http://tretyakovgallery.ru">tretyakovgallery.ru</a></p>
+                        </div>
+                        <div class="btns-place3">
+                            <button class="btn-podrobno3">Подробнее</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="search-pisk4">
+                    <img class="img-search" src="./img/vdnx.jpg" alt="Фотография ВДНХ">
+                    <div class="search-place4">
+                        <h4>ВДНХ</h4>
+                        <div class="place4">
+                            <h5>Адаптация:</h5>
+                            <p>✔️ Наличие специализированных программ</p>
+                            <p>✔️ Мастер-классы</p>
+                            <p>✔️ Адаптированные экскурсии</p>
+                            <p><strong>Адрес:</strong>просп. Мира, 119, Москва</p>
+                            <p><strong>Контакты:</strong> +7 (499) 132-10-47, <a href="http://tretyakovgallery.ru">tretyakovgallery.ru</a></p>
+                        </div>
+                        <div class="btns-place4">
+                            <button class="btn-podrobno4">Подробнее</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="search-pisk5">
+                    <img class="muzei-isskustva-garag" src="./img/muzei-isskustva-garag.jpg" alt="Фотография ВДНХ">
+                    <div class="search-place5">
+                        <h4>Музей современного искусства «Гараж»:</h4>
+                        <div class="place5">
+                            <h5>Адаптация:</h5>
+                            <p>✔️ Наличие специализированных программ</p>
+                            <p>✔️ Социальные истории в виде приложения на смартфон</p>
+                            <p>✔️ Мастер-классы, адаптированные экскурсии</p>
+                            <p><strong>Адрес:</strong>ул. Крымский Вал, 9, стр. 32, Москва (Парк Горького)</p>
+                            <p><strong>Контакты:</strong> +7 (499) 132-10-47, <a href="http://garagemca.org">garagemca.org</a></p>
+                        </div>
+                        <div class="btns-place5">
+                            <button class="btn-podrobno5">Подробнее</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="search-pisk6">
+                    <img class="muzei-moskovskogo-kremlya" src="./img/muzei-moskovskogo-kremlya.png" alt="Музеи Московского кремля">
+                    <div class="search-place6">
+                        <h4>Музеи Московского кремля</h4>
+                        <div class="place6">
+                            <h5>Адаптация:</h5>
+                            <p>✔️ Наличие специализированных программ для детей с РАС</p>
+                            <p>✔️ Интерактивные экспозиции</p>
+                            <p>✔️ Творческие занятия </p>
+                            <p>✔️ Вспомогательные пособия</p>
+                            <p>✔️ Возможность гибкого времени пребывания</p>
+                            <p><strong>Адрес:Ивановская площадь, Москва</strong></p>
+                            <p><strong>Контакты:</strong>+7 (495) 695-41-46, <a href="http://kreml.ru">kreml.ru</a></p>
+                        </div>
+                        <div class="btns-place6">
+                            <button class="btn-podrobno6">Подробнее</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="search-pisk7">
+                    <img class="moskovski_planetari" src="./img/moskovski_planetari.jpg" alt="Фотография ВДНХ">
+                    <div class="search-place7">
+                        <h4>Московский планетарий</h4>
+                        <div class="place7">
+                            <h5>Адаптация:</h5>
+                            <p>✔️ Возможность участия в интерактивных зонах</p>
+                            <p>✔️ Мастер-классы </p>
+                            <p>✔️ Возможность гибкого времени пребывания </p>
+                            <p><strong>Адрес:Садовая-Кудринская ул., 5, стр. 1, Москва</strong></p>
+                            <p><strong>Контакты:</strong>+7 (495) 221-76-90, <a href="http://kreml.ru">planetarium-moscow.ru</a></p>
+                        </div>
+                        <div class="btns-place7">
+                            <button class="btn-podrobno7">Подробнее</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="search-pisk8">
+                    <img class="zaradie" src="./img/zaradie.jpg" alt="Фотография ВДНХ">
+                    <div class="search-place8">
+                        <h4>Зарядье</h4>
+                        <div class="place8">
+                            <h5>Адаптация:</h5>
+                            <p>✔️ Интерактивные экспозиции</p>
+                            <p>✔️ Мастер-классы </p>
+                            <p>✔️ Экскурсии </p>
+                            <p>✔️ Возможность гибкого времени пребывания </p>
+                            <p><strong>Адрес:</strong> ул. Варварка, 6, стр. 1, Москва</p>
+                            <p><strong>Контакты:</strong>+7 (495) 531-05-32, <a href="http://welcome.zaryadyepark.ru">welcome.zaryadyepark.ru</a></p>
+                        </div>
+                        <div class="btns-place8">
+                            <button class="btn-podrobno8">Подробнее</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="search-pisk9">
+                    <img class="gorodskaya_ferma_vdnx" src="./img/gorodskaya_ferma_vdnx.jpg" alt="Фотография ВДНХ">
+                    <div class="search-place9">
+                        <h4>Городская ферма на ВДНХ</h4>
+                        <div class="place9">
+                            <h5>Адаптация:</h5>
+                            <p>✔️ Мастер-классы </p>
+                            <p>✔️ Адаптированные экскурсии, праздники </p>
+                            <p>✔️ Экскурсии </p>
+                            <p>✔️ Возможность гибкого времени пребывания </p>
+                            <p><strong>Адрес:</strong> просп. Мира, 119, стр. 45, Москва</p>
+                            <p><strong>Контакты:</strong>+7 (495) 531-05-32, <a href="http://gorodskayaferma.ru">gorodskayaferma.ru</a></p>
+                        </div>
+                        <div class="btns-place9">
+                            <button class="btn-podrobno9">Подробнее</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="search-pisk10">
+                    <img class="experementarium-muzei" src="./img/experementarium-muzei.jpg" alt="Фотография ВДНХ">
+                    <div class="search-place10">
+                        <h4>Экспериментаниум</h4>
+                        <div class="place10">
+                            <h5>Адаптация:</h5>
+                            <p>✔️ Адаптированные экскурсии  </p>
+                            <p>✔️ Мастер-классы  </p>
+                            <p>✔️ Интерактивные зоны </p>
+                            <p><strong>Адрес:</strong> Ленинградский просп., 80, корп. 11, Москва</p>
+                            <p><strong>Контакты:</strong>+7 (495) 120-05-20, <a href="http://experimentanium.ru">experimentanium.ru</a></p>
+                        </div>
+                        <div class="btns-place10">
+                            <button class="btn-podrobno10">Подробнее</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="search-pisk11">
+                    <img class="dom-culturi-ges-dva" src="./img/dom-culturi-ges-dva.jpg" alt="Фотография ВДНХ">
+                    <div class="search-place11">
+                        <h4>Дом культуры ГЭС-2</h4>
+                        <div class="place11">
+                            <h5>Адаптация:</h5>
+                            <p>✔️ Тексты на ясном языке   </p>
+                            <p>✔️ Мастер-классы, познавательные занятия   </p>
+                            <p>✔️ Проводятся адаптированные мероприятия  </p>
+                            <p>✔️ Интерактивные занятия адаптированные   </p>
+                            <p><strong>Адрес:</strong>Болотная наб., 15 (этаж 1)</p>
+                            <p><strong>Контакты:</strong>+7 (495) 990-00-00, <a href="http://ges-2.org/en">ges-2.org/en</a></p>
+                        </div>
+                        <div class="btns-place11">
+                            <button class="btn-podrobno11">Подробнее</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="search-pisk12">
+                    <img class="muzei-kosmonavtiki" src="./img/muzei-kosmonavtiki.jpg" alt="Фотография ВДНХ">
+                    <div class="search-place12">
+                        <h4>Музей Космонавтики</h4>
+                        <div class="place12">
+                            <h5>Адаптация:</h5>
+                            <p>✔️ Социальные истории    </p>
+                            <p>✔️ Адаптированная экскурсионная программа   </p>
+                            <p><strong>Адрес:</strong>просп. Мира, 111</p>
+                            <p><strong>Контакты:</strong>+7 (499) 750-23-00 (доб. 1016), <a href="http://kosmo-museum.ru">kosmo-museum.ru</a></p>
+                        </div>
+                        <div class="btns-place12">
+                            <button class="btn-podrobno12">Подробнее</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="content-wrapper">
+            <div class="btn-object container">
+                <button class="btn-object2" id="add-object-button">Добавить объект</button>
+            </div>
+        </section>
+
+        <div class="add-object container" id="add-object-form" style="display:none;">
+            <div class="form-header">
+                <span class="close-button" id="close-form-button">&times;</span>
+            </div>
+            <form class="add-objects" action="https://formspree.io/f/xgvyzjwg" method="POST">
+                <label for="email-input">Ваш email:</label>
+                <input type="email" name="email" id="email-input">
+                <p id="email-error" class="error-message"></p>
+        
+                <label for="object-name">Название объекта:</label>
+                <textarea name="message" id="object-name"></textarea>
+                <p id="object-name-error" class="error-message"></p>
+        
+                <label for="object-description">Описание объекта:</label>
+                <textarea id="object-description" name="object-description"></textarea>
+                <p id="object-description-error" class="error-message"></p>
+                <button class="btn-submit" type="submit">Отправить</button>
+            </form>
+        </div>
+
+        <div class="overlay" id="overlay"></div>
+
+        <section class="slides-wrapper container">
+            <div class="slider-wrappers">
+                <h2>Фотогалерея</h2>
+                <div class="slider-container">
+                    <img class="slider-img" src="./img/slider.jpg" alt="Фотография дружелюбного места">
+                    <img class="slider-img" src="./img/slider-2.jpg" alt="Фотография дружелюбного места">
+                    <img class="slider-img" src="./img/slider-3.jpg" alt="Фотография дружелюбного места">
+                    <img class="slider-img" src="./img/slider-4.jpg" alt="Фотография дружелюбного места">
+                </div>
+            </div>
+        
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer_wrapper container">
+            <section class="block-content-footer">
+                <h2 class="text">Создадим вместе карту дружелюбных мест</h2>
+                <div class="btn-footers">
+                    <button class="btn-footer1">Добавить место</button>
+                    <button class="btn-footer2">Получить стикер</button>
+                </div>
+            </section>
+            <div class="footer1-soseti">
+                <img src="./img/logo_footer1.png" alt="Логотип социальной сети">
+            </div>
+            <section class="footer-contacts">
+                <h3 class="contact-organization">Контакты организации</h3>
+                <div class="contacts">
+                    <a class="mail-contacts" href="mailto:hello@yadruzhu.ru">hello@yadruzhu.ru</a>
+                    <a class="telephone-contacts" href="tel:79010947911">+7(901)094-79-11</a>
+                </div>
+            </section>
+            <div class="conctactss">
+                <img src="./img/footer-img.png" alt="Иллюстрация контактов">
+            </div>
+        </div>
+    </footer>
+    <script src="./js/burger.js"></script>
+    <script src="/Ya_druhu/js/map.js"></script>
+    <script src="/Ya_druhu/js/search.js"></script>
+    <script src="/Ya_druhu/js/form.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=2ad0bcb65343d9a235a7519d8fe264d05beefed3
+    &libraries=places&callback=initialize" async defer></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCheMMZWLoofrMcmJRFDbCDYTVj4Gw_WVY" async defer></script>
+</body>
+</html>

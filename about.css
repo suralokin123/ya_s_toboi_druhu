@@ -1,0 +1,396 @@
+@font-face {
+    font-family: "BryndanWriteBook";
+    src: url(./fonts/BryndanWriteBook.ttf);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:'Courier New', Courier, monospace; 
+  }
+  
+  body {
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    background: #ffffff;
+    font-family: "Mon Amour One", sans-serif;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .main__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+  }
+
+  .main_btn {
+    border-radius: 15px;
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    background-color: #0362d4;
+    color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .main_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:40px 0;
+    gap:40px;
+  }
+
+  .header-text2 {
+    font-size:40px;
+    color: #000000;
+    font-family: "BryndanWriteBook";
+    border-radius:10px;
+  }
+
+  .header-text2-text {
+    background-color: #0362d4;
+    color: #ffffff;
+    width: 100px;
+    font-weight: 800;
+    font-family:"BryndanWriteBook";
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+
+  .header-span {
+    background-color: #0362d4;
+    color: #ffffff;
+    width: 100px;
+    font-family:"BryndanWriteBook";
+    text-align: center;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+
+  .header-block2 {
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+  }
+
+  .about_project {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-bottom:20px;
+  }
+
+  .about-text {
+    font-size:25px;
+  }
+
+  .about-description {
+    display: flex;
+    flex-direction: column;
+    font-size:25px;
+  }
+
+  .about_project2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom:20px;
+    gap:30px;
+  }
+
+  .about_project2 p {
+    font-size:25px;
+  }
+
+  .abouts-projects {
+    margin-bottom:40px;
+  }
+
+  .abouts-projects p {
+    padding:0 35px;
+  }
+
+
+  .about_command-text {
+    font-size:30px;
+  }
+
+  .about_command_project {
+    display: flex;
+    margin-bottom:50px;
+    align-items: center;
+  }
+
+  .command-project {
+    margin-bottom:30px;
+  }
+
+  .command-description {
+    font-size:30px;
+  }
+
+  .about_command2_project2 {
+    display: flex;
+    margin-bottom:50px;
+  }
+
+  .loseva_daria_sergeevna {
+    width:400px;
+    height:300px;
+    border-radius:20px;
+  }
+
+  .about-command-text {
+    font-size:30px;
+  }
+
+  .vinokurova_galina_aleksandrovna {
+    border-radius:20px;
+  }
+
+  .design_site {
+    display: flex;
+    gap:20px;
+    align-items: center;
+    margin-bottom:40px;
+  }
+
+  .design_nadegda {
+    width:1000px;
+    font-size:25px;
+  }
+
+  .nadehda {
+    width:350px;
+    border-radius:20px;
+  }
+
+  .programmist_site {
+    display: flex;
+  }
+  
+  .programmist_nikolay {
+    font-size:25px;
+  }
+
+  .romashkin_nikolay_vladimirovich {
+    width:450px;
+    border-radius:20px;
+  }
+
+
+  .mobile-menu {
+    display: none;
+  }
+
+
+
+@media (min-width: 375px) and (max-width: 1200px) {
+
+
+  .main_link {
+    display: none;
+  }
+
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.header-text2 {
+  position:relative;
+  top:-120px;
+  font-family: "BryndanWriteBook";
+  font-size:40px;
+}
+
+.header-span {
+  background-color: #0362d4;
+  color: #ffffff;
+  width:120px;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.burger-line {
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  transition: all 0.3s ease;
+  position:relative;
+  top:20px;
+  left:-15px;
+}
+
+
+.burger-menu.active .burger-line:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.burger-menu.active .burger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu.active .burger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+.mobile-menu {
+  position: absolute; 
+  top:-10px;
+  left: 0;
+  width:450px;
+  z-index:999;
+  height:700px;
+  background-color:#0362d4;
+  color: white;
+  padding: 20px;
+  display: none;
+  flex-direction: column;
+  gap:20px;
+}
+
+.mobile_menu_text {
+  font-family: "Gilroy";
+font-weight: 700;
+position: relative;
+top:-10px;
+font-size: 24px;
+line-height: 141%;
+letter-spacing: 0%;
+text-align: center;
+color: rgba(255, 255, 255, 1);
+}
+
+
+.mobile-menu.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;  
+  position: absolute;
+  left:-40px;
+}
+
+body.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+  .burger-menu {
+    z-index:1000;
+    position:relative;
+    top:20px;
+    left:320px;
+  }
+  .main__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .about_project {
+    text-align: center;
+  }
+  .about-text {
+    text-align: center;
+  }
+  .about-description {
+    text-align: center;
+  }
+  .about_project2 {
+    text-align: center;
+  }
+  .abouts-projects {
+    text-align: center;
+  }
+  .command-project {
+    display: flex;
+    flex-direction: column;
+  }
+  .command-description {
+    display: flex;
+    flex-direction: column;
+  }
+  .about_command_project {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  .about_command-text {
+    width:350px;
+    font-size:20px;
+    margin-bottom:50px;
+  }
+  .loseva_daria_sergeevna {
+    width:320px;
+    height:300px;
+  }
+  .about_command2_project2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+  }
+  .about-command-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width:350px;
+    font-size:20px;
+  }
+  .vinokurova_galina_aleksandrovna {
+    width:250px;
+  }
+  .design_site {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .design_nadegda {
+    width:300px;
+    font-size:20px;
+  }
+  .programmist_site {
+    display: flex;
+    flex-direction: column;
+    width:300px;
+    font-size:20px;
+    gap:40px;
+  }
+  .programmist_nikolay {
+    width:300px;
+    font-size:20px;
+  }
+}

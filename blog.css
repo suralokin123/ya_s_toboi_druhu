@@ -1,0 +1,114 @@
+/* Шрифты */
+@font-face {
+    font-family:'Courier New', Courier, monospace;
+    src: url(./fonts/BryndanWriteBook.ttf);
+  }
+  
+  /* Сбрасывание стилей браузера*/
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "BryndanWriteBook";
+  }
+  
+  body {
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    background: #ffffff;
+    font-family: "Mon Amour One", sans-serif;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* Начало верстки */
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+
+  body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  .header-text {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:25px;
+    color: #ddd;
+  }
+
+  .logo-main__main {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Основной контент */
+  .main-content {
+    display: flex;
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center;     /* Вертикальное центрирование (если нужно) */
+    min-height: 100vh;       /* Занимает всю высоту экрана (если нужно) */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Секция с методическими пособиями */
+  .methodological-guides {
+    max-width: 800px; /* Ограничиваем ширину контента */
+    width: 100%;       /* Занимает всю доступную ширину родителя */
+  }
+  
+  /* Заголовок */
+  .methodological-guides__title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  /* Список пособий */
+  .methodological-guides__list {
+    list-style: none; /* Убираем маркеры списка */
+    padding: 0;
+  }
+  
+  /* Элемент списка (каждое пособие) */
+  .methodological-guides__item {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+  
+  /* Заголовок пособия */
+  .methodological-guides__item-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  /* Список деталей пособия */
+  .methodological-guides__item-details {
+    list-style: disc; /* Возвращаем маркеры списка для деталей */
+    padding-left: 20px;
+  }
+  
+  /* Описание */
+  .methodological-guides__description {
+    margin-top: 20px;
+    text-align: justify;
+  }
+
+ 
+
+  .mobile-menu {
+    display:none;
+  }
+  
