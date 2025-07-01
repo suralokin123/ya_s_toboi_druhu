@@ -826,7 +826,7 @@ footer {
   
   .img_detski_sad {
     text-align: center;
-    width:350px;
+    max-width: 100%;
     text-align: center;
     height:auto;
   }
@@ -875,9 +875,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
-  width:300px;
-  left:150px;
+margin: 0 auto;
 }
 
 .add-objects {
