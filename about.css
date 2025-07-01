@@ -205,14 +205,14 @@
     display: none;
   }
 
+ 
 
+@media (max-width:375px) {
 
-@media (min-width: 375px) and (max-width: 1200px) {
+.header-block2 {
+  display: none;
+}
 
-
-  .main_link {
-    display: none;
-  }
 
 
 .burger-menu {
