@@ -30,26 +30,26 @@ img {
 
 .header_wrapper {
   display: flex;
-  gap:10px;
+  gap: 10px;
   margin-bottom: 100px;
 }
 
 .header_header-content {
   display: flex;
-  padding:0 40px;
+  padding: 0 40px;
   justify-content: space-between;
 }
 
 .header-subtitle {
   font-size: 40px;
-  font-family: 'BryndanWriteBook';
-    color: #000;
+  font-family: "BryndanWriteBook";
+  color: #000;
 }
 
 .header-subtitle2 {
   font-size: 30px;
-  font-family: 'BryndanWriteBook';
-    color: #000;
+  font-family: "BryndanWriteBook";
+  color: #000;
 }
 
 .header-span {
@@ -76,8 +76,6 @@ img {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-
-
 .btn:hover {
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5);
 }
@@ -101,7 +99,7 @@ img {
 }
 
 .img_detski_sad {
-  width:1700px;
+  width: 1700px;
 }
 
 .logo-width {
@@ -263,7 +261,7 @@ img {
 }
 
 .map-container {
-  margin-bottom:50px;
+  margin-bottom: 50px;
 }
 
 .search-container {
@@ -283,9 +281,8 @@ img {
 }
 
 #search {
-  margin-bottom:50px;
+  margin-bottom: 50px;
 }
-
 
 .search-places {
   width: 800px;
@@ -296,11 +293,11 @@ img {
 }
 
 .search-place6 h4 {
-  font-size:20px;
+  font-size: 20px;
 }
 
 .place-druzhba {
-  font-size:20px;
+  font-size: 20px;
 }
 
 .place {
@@ -618,7 +615,7 @@ img {
   z-index: 1000;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
-  width:50%;
+  width: 50%;
   max-width: 600px;
 }
 
@@ -696,14 +693,14 @@ textarea.error {
 
 .close-buttons {
   position: absolute;
-  top:-35px;
-  left:170px;
+  top: -35px;
+  left: 170px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.1);
   color: #002aff;
-  font-size:40px;
+  font-size: 40px;
   line-height: 30px;
   text-align: center;
   cursor: pointer;
@@ -716,7 +713,6 @@ textarea.error {
 .close-buttons:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
-
 
 .error {
   border: 1px solid red !important;
@@ -820,19 +816,15 @@ footer {
   width: 300px;
 }
 
-
 .mobile-menu {
-  display:none;
+  display: none;
 }
 
-
-
-@media (min-width:200px) and (max-width:1200px) {
-  
+@media (min-width: 200px) and (max-width: 1200px) {
   .header-block {
     display: none;
   }
-  
+
   .container {
     width: 100%;
     padding: 0 15px;
@@ -841,56 +833,52 @@ footer {
 
   .logo-width {
     display: none;
-  } 
-
+  }
 
   .header_header-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:40px;
+    gap: 40px;
   }
 
   .header__header {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    position: relative;
-  }
-
+}
 
   .header-text {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size:35px;
+    font-size: 35px;
   }
 
   .header-title {
     text-align: center;
-    width:330px;
-    font-size:35px;
+    width: 330px;
+    font-size: 35px;
   }
 
   .header-span {
     justify-content: center;
   }
 
-  
   .img_detski_sad {
     text-align: center;
     max-width: 100%;
     text-align: center;
-    height:auto;
+    height: auto;
   }
 
   .header-subtitle2 {
-    font-family: 'BryndanWriteBook';
+    font-family: "BryndanWriteBook";
     color: #000;
     text-align: center;
-    width:300px;
+    width: 300px;
   }
 
   .header-block {
@@ -899,14 +887,14 @@ footer {
   }
 
   .header-subtitle {
-    font-family: 'BryndanWriteBook';
+    font-family: "BryndanWriteBook";
     color: #000;
     text-align: center;
-    width:300px;
+    width: 300px;
   }
 
   .place-druzhba {
-    font-size:20px;
+    font-size: 20px;
   }
 
   .contents-adaptive {
@@ -915,8 +903,8 @@ footer {
 
   .maps {
     text-align: center;
-    padding:0 20px;
-    margin-bottom:50px;
+    padding: 0 20px;
+    margin-bottom: 50px;
   }
 
   .map-container iframe {
@@ -925,56 +913,56 @@ footer {
   }
 
   .btns-place12 {
-    margin-bottom:20px;
+    margin-bottom: 20px;
   }
-  
+
   .add-object {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:300px;
+    width: 300px;
     position: relative;
-    left:150px;
-    max-height:auto;
+    left: 150px;
+    max-height: auto;
   }
-  
+
   .add-objects {
     display: flex;
     flex-direction: column;
   }
-  
+
   .add-objects label,
   .add-objects input,
   .add-objects textarea,
   .add-objects button {
     margin-bottom: 10px;
   }
-  
+
   .add-objects input,
   .add-objects textarea {
     width: 100%;
     box-sizing: border-box;
   }
-  
+
   .btn-submit {
     align-self: center;
     width: auto;
     padding: 10px 20px;
   }
-  
+
   .form-header {
     display: flex;
     justify-content: flex-end;
     width: 100%;
     margin-bottom: 10px;
   }
-  
+
   .close-button {
     font-size: 1.5em;
     cursor: pointer;
   }
-  
+
   .error-message {
     font-size: 0.8em;
     color: red;
@@ -984,86 +972,102 @@ footer {
     flex-direction: column;
   }
 
-    .slides-wrapper {
-      padding: 20px;
-    }
+  .slides-wrapper {
+    padding: 20px;
+  }
 
-    .search-places {
-      width:350px;
-      margin-bottom:50px;
-    }
-  
+  .search-places {
+    width: 350px;
+    margin-bottom: 50px;
+  }
+
   .text {
-    width:300px;
-    font-size:25px;
+    width: 300px;
+    font-size: 25px;
   }
 
-    .slider-container {
-      display: flex;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
-    }
-  
-    .slider-img {
-      flex: 0 0 100%;
-      width: 100%;
-      height: auto;
-      scroll-snap-align: start;
-    }
-
-    .burgers-menu {
-      position:absolute;
-      top: 20px;
-      right:5px;
-      width: 30px;
-      height: 30px;
-      z-index:2000;
-      cursor: pointer;
-  }
-  
-  .burger-line {
-      width: 100%;
-      height: 4px;
-      background-color: #333; /* Цвет линий */
-      margin-bottom: 5px;
-      transition: all 0.3s ease; /* Плавная анимация (по желанию) */
-  }
-  
-
-  .mobile-menu {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height:100%;
-      background-color: rgba(0, 0, 0, 0.8);
-      z-index:1;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+  .slider-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
   }
 
-  .burger-menu.active .burger-line:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
+  .slider-img {
+    flex: 0 0 100%;
+    width: 100%;
+    height: auto;
+    scroll-snap-align: start;
+  }
+
+/* Стили для бургера */
+.burgers-menu {
+  width: 30px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative; 
+  top:40px;/* Важно для позиционирования крестика */
+  z-index: 10; /* Чтобы был над меню */
 }
 
-.burger-menu.active .burger-line:nth-child(2) {
-    opacity: 0;
+.burgers-line {
+  width: 100%;
+  height: 3px;
+  background-color: #000000; /* Цвет линий */
+  transition: all 0.3s ease-in-out; /* Плавная анимация */
 }
 
-.burger-menu.active .burger-line:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
+/* Стили для крестика (когда меню открыто) */
+.burgers-menu.open .burgers-line:nth-child(1) {
+  transform: rotate(47deg) translate(6px, 6px);
 }
-  
-  .mobile-menu a {
-      color: white;
-      font-family: "BryndanWriteBook";
-      font-size: 2em;
-      position: relative;
-      left:-20px;
-      text-decoration: none;
-  }
-  
+
+.burgers-menu.open .burgers-line:nth-child(2) {
+  opacity: 0;
+}
+
+.burgers-menu.open .burgers-line:nth-child(3) {
+  transform: rotate(-47deg) translate(6px, -6px);
+}
+
+/* Стили для мобильного меню */
+.mobiles-menu {
+  display: none; /* Скрываем меню по умолчанию */
+  /* Другие стили для меню */
+  position: absolute; /* Важно для позиционирования, если нужно */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #0362D4;
+  z-index:1;
+}
+
+.mobiles-menu a {
+  display: flex;
+  justify-content: center;
+  position:relative;
+  top:170px;
+  font-size:40px;
+  margin-bottom: 10px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.mobiles-menu.open {
+  display: block; /* Показываем меню, когда класс 'open' добавлен */
+}
+
+/* Добавляем этот стиль в ваш CSS */
+body.no-scroll {
+  overflow: hidden; /*  Скрывает полосу прокрутки */
+  height: 100vh; /* Предотвращает дергание контента */
+  position: fixed;
+  width: 100%;
+}
+
+
 }
