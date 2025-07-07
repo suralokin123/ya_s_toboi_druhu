@@ -820,7 +820,7 @@ footer {
   display: none;
 }
 
-@media (min-width: 200px) and (max-width: 1200px) {
+@media screen and (min-width: 200px) and (max-width: 850px) {
   .header-block {
     display: none;
   }
